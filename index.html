@@ -25,8 +25,8 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        clifford: '#da373d',
+                    backgroundImage: {
+                        banner: "url('./images/banner.png')"
                     }
                 }
             }
@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24">
+    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 garamond">
         <!-- Navbar -->
         <nav>
             <div class="navbar bg-base-100">
@@ -92,6 +92,25 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner -->
+        <div class="max-w-screen-xl my-10 mx-auto px-8 md:px-16 lg:px-24">
+
+            <div class="hero p-20 rounded bg-banner">
+                <div class=" "></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-4xl font-extrabold text-white">We Provide Effective <br> Legal Solutions
+                        </h1>
+                        <p class="mb-5 text-sm text-white">There are many variations of passages of Lorem Ipsum
+                            available, but the
+                            majority
+                            have suffered alteration in some form, by injected humour.</p>
+                        <input class="w-[300px] h-[45px] rounded-sm p-4" type="text" placeholder="Search your services">
+                        <button class="btn bg-[#B68C5A] text-white border-0 px-5">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
