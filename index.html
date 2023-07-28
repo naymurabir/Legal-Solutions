@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
-    <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9fb8d1b6a6.js" crossorigin="anonymous"></script>
 
-    <!-- DaisyUI Component -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- DaisyUI Components -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styles -->
@@ -26,14 +26,13 @@
             theme: {
                 extend: {
                     backgroundImage: {
-                        banner: "url('./images/banner.png')"
+                        'background-img': "url('./images/banner.png')",
                     }
                 }
             }
         }
     </script>
-
-    <!-- Fonts -->
+    <!-- Font -->
     <style>
         .garamond {
             font-family: 'EB Garamond', serif;
@@ -41,10 +40,9 @@
     </style>
 </head>
 
-<body>
-    <header class="max-w-screen-xl mx-auto px-0 md:px-16 lg:px-24 garamond">
-        <!-- Navbar -->
-        <nav>
+<body class="garamond">
+    <header>
+        <nav class="max-w-screen-xl mx-auto py-5 px-2 md:px-10 lg:px-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -61,20 +59,19 @@
                             <li><a>Services</a></li>
                             <li><a>Cases</a></li>
                             <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
+                            <li><a>Contact US</a></li>
                         </ul>
                     </div>
-                    <!-- <a class="btn btn-ghost normal-case text-xl">Justice</a> -->
-                    <img class="w-28" src="./images/logo2.png" alt="">
+                    <a class="btn btn-ghost normal-case ml-5 md:ml-40 lg:ml-0 hidden lg:block"><img class="w-32"
+                            src="./images/logo2.png" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-lg">
                         <li>
                             <a>Home</a>
                         </li>
                         <li>
                             <a>Services <i class="fa-solid fa-chevron-right"></i></a>
-
                         </li>
                         <li>
                             <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
@@ -83,7 +80,7 @@
                             <a>Blog <i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                         <li>
-                            <a>Contact <i class="fa-solid fa-chevron-right"></i></a>
+                            <a>Contact US <i class="fa-solid fa-chevron-right"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -93,26 +90,30 @@
             </div>
         </nav>
         <!-- Banner -->
-        <div class="max-w-screen-xl my-10 mx-auto px-0 md:px-16 lg:px-24">
+        <section>
+            <div class="max-w-screen-xl mx-auto my-5 py-5 px-2 md:px-16 lg:px-24">
 
-            <div class="hero p-0 md:p-20 lg:p-20 rounded bg-banner">
-                <div class=" "></div>
-                <div class="hero-content text-center text-neutral-content">
-                    <div class="">
-                        <h1 class="mb-5 text-4xl font-extrabold text-white">We Provide Effective <br> Legal Solutions
-                        </h1>
-                        <p class="mb-5 text-sm text-white">There are many variations of passages of Lorem Ipsum
-                            available, but the
-                            majority
-                            have suffered alteration in some form, by injected humour.</p>
-                        <input class="w-[200px] md:w-[300px] lg:w-[300px] h-[45px] rounded-sm p-4" type="text"
-                            placeholder="Search your services">
-                        <button class="btn bg-[#B68C5A] text-white border-0 px-5">Search</button>
+                <div class="hero min-h-[450px] bg-background-img">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-white text-4xl font-bold">We Provide Effective <br> Legal Solutions
+                            </h1>
+                            <p class="mb-5 text-white">Law refers to a system of rules, regulations, and principles that
+                                govern
+                                societies, institutions, and individuals.</p>
 
+                            <div class="space-x-1">
+                                <input class="px-5 py-3 rounded-xl outline-none lg:w-[300px]" type="text"
+                                    placeholder="Search your services">
+                                <button class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </div>
+        </section>
     </header>
     <main>
 
